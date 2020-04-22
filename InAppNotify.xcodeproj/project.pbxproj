@@ -7,20 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9595B96A245052F9001364A4 /* InAppNotify.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B151729D1F1F8E99001FE27C /* InAppNotify.framework */; };
+		9595B96B245052F9001364A4 /* InAppNotify.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B151729D1F1F8E99001FE27C /* InAppNotify.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B15172A21F1F8E99001FE27C /* InAppNotify.h in Headers */ = {isa = PBXBuildFile; fileRef = B15172A01F1F8E99001FE27C /* InAppNotify.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B15172AF1F1F8EAD001FE27C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B15172AE1F1F8EAD001FE27C /* AppDelegate.swift */; };
 		B15172B11F1F8EAD001FE27C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B15172B01F1F8EAD001FE27C /* ViewController.swift */; };
 		B15172B41F1F8EAD001FE27C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B15172B21F1F8EAD001FE27C /* Main.storyboard */; };
 		B15172B61F1F8EAD001FE27C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B15172B51F1F8EAD001FE27C /* Assets.xcassets */; };
 		B15172B91F1F8EAD001FE27C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B15172B71F1F8EAD001FE27C /* LaunchScreen.storyboard */; };
-		B15172BE1F1F8EB9001FE27C /* InAppNotify.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B151729D1F1F8E99001FE27C /* InAppNotify.framework */; };
-		B15172BF1F1F8EB9001FE27C /* InAppNotify.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B151729D1F1F8E99001FE27C /* InAppNotify.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B15172C41F1F8ECA001FE27C /* InAppNotify.swift in Sources */ = {isa = PBXBuildFile; fileRef = B15172C31F1F8ECA001FE27C /* InAppNotify.swift */; };
 		B15172C61F1F9010001FE27C /* NotificationFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B15172C51F1F9010001FE27C /* NotificationFactory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		B15172C01F1F8EB9001FE27C /* PBXContainerItemProxy */ = {
+		9595B96C245052F9001364A4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = B15172941F1F8E99001FE27C /* Project object */;
 			proxyType = 1;
@@ -30,13 +30,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		B15172C21F1F8EB9001FE27C /* Embed Frameworks */ = {
+		9595B96E245052F9001364A4 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				B15172BF1F1F8EB9001FE27C /* InAppNotify.framework in Embed Frameworks */,
+				9595B96B245052F9001364A4 /* InAppNotify.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -70,19 +70,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B15172BE1F1F8EB9001FE27C /* InAppNotify.framework in Frameworks */,
+				9595B96A245052F9001364A4 /* InAppNotify.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9595B96424505285001364A4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		B15172931F1F8E99001FE27C = {
 			isa = PBXGroup;
 			children = (
 				B151729F1F1F8E99001FE27C /* InAppNotify */,
 				B15172AD1F1F8EAD001FE27C /* InAppNotifyTest */,
 				B151729E1F1F8E99001FE27C /* Products */,
+				9595B96424505285001364A4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -158,12 +166,12 @@
 				B15172A81F1F8EAD001FE27C /* Sources */,
 				B15172A91F1F8EAD001FE27C /* Frameworks */,
 				B15172AA1F1F8EAD001FE27C /* Resources */,
-				B15172C21F1F8EB9001FE27C /* Embed Frameworks */,
+				9595B96E245052F9001364A4 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				B15172C11F1F8EB9001FE27C /* PBXTargetDependency */,
+				9595B96D245052F9001364A4 /* PBXTargetDependency */,
 			);
 			name = InAppNotifyTest;
 			productName = InAppNotifyTest;
@@ -177,18 +185,19 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 0830;
+				LastUpgradeCheck = 1140;
 				ORGANIZATIONNAME = "Luca Becchetti";
 				TargetAttributes = {
 					B151729C1F1F8E99001FE27C = {
 						CreatedOnToolsVersion = 8.3.2;
-						DevelopmentTeam = 3NJYMZCH8Y;
-						LastSwiftMigration = 0830;
+						DevelopmentTeam = YLL2HFTF3U;
+						LastSwiftMigration = 1140;
 						ProvisioningStyle = Automatic;
 					};
 					B15172AB1F1F8EAD001FE27C = {
 						CreatedOnToolsVersion = 8.3.2;
-						DevelopmentTeam = 49RE3G6CPG;
+						DevelopmentTeam = YLL2HFTF3U;
+						LastSwiftMigration = 1140;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -198,6 +207,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -254,10 +264,10 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		B15172C11F1F8EB9001FE27C /* PBXTargetDependency */ = {
+		9595B96D245052F9001364A4 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = B151729C1F1F8E99001FE27C /* InAppNotify */;
-			targetProxy = B15172C01F1F8EB9001FE27C /* PBXContainerItemProxy */;
+			targetProxy = 9595B96C245052F9001364A4 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -285,21 +295,30 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -339,21 +358,30 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -389,19 +417,19 @@
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 3NJYMZCH8Y;
+				DEVELOPMENT_TEAM = YLL2HFTF3U;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = InAppNotify/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = it.brokenice.InAppNotify;
+				PRODUCT_BUNDLE_IDENTIFIER = Jalal.InAppNotify;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -412,46 +440,44 @@
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 3NJYMZCH8Y;
+				DEVELOPMENT_TEAM = YLL2HFTF3U;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = InAppNotify/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = it.brokenice.InAppNotify;
+				PRODUCT_BUNDLE_IDENTIFIER = Jalal.InAppNotify;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
 		B15172BC1F1F8EAD001FE27C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 49RE3G6CPG;
+				DEVELOPMENT_TEAM = YLL2HFTF3U;
 				INFOPLIST_FILE = InAppNotifyTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = it.brokenice.InAppNotifyTest;
+				PRODUCT_BUNDLE_IDENTIFIER = Jalal.InAppNotifyTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
 		B15172BD1F1F8EAD001FE27C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 49RE3G6CPG;
+				DEVELOPMENT_TEAM = YLL2HFTF3U;
 				INFOPLIST_FILE = InAppNotifyTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = it.brokenice.InAppNotifyTest;
+				PRODUCT_BUNDLE_IDENTIFIER = Jalal.InAppNotifyTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
